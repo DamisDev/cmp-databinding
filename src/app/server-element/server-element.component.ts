@@ -6,8 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./server-element.component.css']
 })
 export class ServerElementComponent {
-  @Input('srvElement')
-  element!: { type: string; name: string; content: string; };
+  @Input('srvElement') element!: { type: string, name: string, content: string}; // 'srvElement' is an alias of element that I can use in the parent app.component.html instead of use element
 
   constructor() {}
 }
